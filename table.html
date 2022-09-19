@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+         /* ใช้จัดกลุ่มข้อมความหรือแท็กต่างๆ เข้าเป็นกลุ่มเดียวกันลักษณะคล้ายๆกับ <span> */
+        div{
+            border: 2px solid black
+
+        }
+        span{
+            border: 2px solid black
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <a href="index.html"><h3>กลับหน้าแรก</h3></a>
+    <p><h3><b>รายการสินค้า</b></h3></p>
+    <!-- border ="ความหนา" กำหนดเส้นขอบและความหนาของเส้นขอบตาราง ค่าเรื่มต้น = 0  -->
+    <!-- bgcolor="สี" กำหนดสีพื้นหลังในตาราง -->
+    <!-- width="%" กำหนดความกว้างหน่วยเป็น % -->
+    <!-- alian="left,center,right" จัดตำแหน่งของภาพ หรือตัวอักษรในช่องตาราง (td) -->
+    <table border="1" width="20%"> <!-- ใช้กำหนดสำหรับสร้างตาราง --> 
+        <thead bgcolor="red"> <!-- ใช้กำหนดกลุ่มเนื้อหาส่วนหัวตาราง -->
+            <th>รหัสสินค้า</th>
+            <th>ภาพสินค้า</th> <!-- ใช้กำหนคอลัมน์ที่แสดงผลในส่วนหัวของตาราง -->
+            <th>ชื่อสินค้า</th>
+            <th>ราคา</th>
+            <th>ดำเนินการ</th>
+        </thead>
+        <tbody bgcolor="" align="center"> <!--  ใช้กำหนดกลุ่มเนื้อหาส่วนหัวตาราง -->
+            <tr> <!-- ใช้กำหนดแถวในตาราง -->
+               <td >P001</td>
+               <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Python.svg/1200px-Python.svg.png" alt="Python" width="100px" height="100px">
+               </td> <!-- ใช้กำหนดคอลัมน์ -->
+               <td><p>Python</p></td>
+               <td>250</td>
+               <td><a href="https://www.python.org">กดสั่งซื้อ</a></td>
+            </tr> 
+            <tr>
+                <td>P002</td>
+                <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Javascript_Logo.png" alt="Javascript"  width="100px" height="100px">
+                </td>
+                <td>Javascript</td>
+                <td>250</td>
+                <td><a href="https://www.w3schools.com/js/">กดสั่งซื้อ</a></td>
+            </tr>
+            <tr>
+                <td>P003</td>
+                <td><img src="https://arnondora.in.th/content/images/2021/01/Get-to-know-Java-Logo.png" alt="Java" width="100px" height="100px"></td>
+                <td>Java</td>
+                <td>250</td>
+                <td><a href="https://www.oracle.com/java/technologies/downloads/">กดสั่งซื้อ</a></td>
+            </tr>
+        </tbody>
+        <tfoot bgcolor=""> <!-- ใช้กำหนดกลุ่มส่วนใต้ตาราง --> 
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td align="center">ราคารวม : 750</td>
+        </tfoot>
+    </table>
+  
+</body>
+</html>

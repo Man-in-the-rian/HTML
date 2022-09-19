@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+</head>
+<body>
+    <h2>FORM</h2>
+    <a href="index.html"><h3>กลับหน้าแรก</h3></a>
+    <hr>
+    <h2 >แบบฟอร์มลงทะเบียน</h2>
+    <form>
+        <div >
+            <!-- <lebel> กำหนดป้ายชื่อให้ช่องรับข้อมูล  -->
+            <label for="Fristname">ชื่อจริง</label>
+            <!-- placeholder คำอธิบายภายใน input -->
+            <!-- type ชนิดข้อมูล -->
+            <!-- <input> แสดงช่องรับข้อความต่างๆ -->
+            <!-- required = ถ้าใส่ไปใน input ก็คือบังคับว่าต้องป้อนข้อมูลลงไปห้ามมีค่าว่าง -->
+            <!-- readonly = ห้ามมีการเปลี่ยนค่า -->
+            <input type="text" name="fname" placeholder="ป้อนชื่อของคุณ" required>
+        </div>
+        <div >
+            <label for="Lastname">นามสกุล</label>
+            <input type="text" name="lname" placeholder="ป้อนนามสกุลของคุณ" required>
+        </div>
+        <div>
+            <label for="E-maill">อีเมล</label>
+            <input type="email" placeholder="ป้อนอีเมลของคุณ" required>
+        </div>
+        <div>
+            <label for="Password">รหัสผ่าน</label>
+            <input type="password" name="password" placeholder="ป้อนรหัสของคุณ" required>
+        </div>
+        <div>
+            <label for="">อายุ</label>
+            <input type="number" name="age" min="0" placeholder="ป้อนอายุของคุณ">
+        </div>
+        <div style="color: blue;">
+            <label for="วันเกิด">วันเกิด</label>
+            <input type="date" name="brithgate" placeholder="ป้อนวันเกิดของคุณ">
+        </div>
+        <div>
+            <label for="tel">เบอร์โทรศัพท์</label>
+            <input type="tel" placeholder="ป้อนเบอร์โทรศัพท์ของคุณ">
+        </div>
+        <div>
+            <label for="">คำอธิบาย</label><br>
+            <!-- <textarea> สร้างช่องรับข้อมความแบบหลายบรรทัด -->
+            <textarea cols="30" rows="3"></textarea>
+        </div>
+       <div>
+        <label for="color">สี</label>
+        <input type="color" name="color">
+       </div>
+       <div>
+        <label for="ช่วงตัวเลข">ช่วงตัวเลข</label>
+        <input type="range" name="rangenumber" value="50" > 
+       </div>
+        <div>
+            <label for="edu">ระดับการศึกษา</label>
+            <select name="edu" id=""> <!--<select>แสดงตัวเลือกในรูปแบบ Drop-down -->
+                <option value="มัธยมศึกษา">มัธยมศึกษา</option> <!--<option> สร้างตัวเลือก -->
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <!-- selected การเลือกตัวแสดงเริ่มต้น -->
+                <option value="ปริญญาโท" selected>ปริญญาโท</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">เพศ</label>
+            <!-- radio = การเลือกตัวเลือกได้ตัวเดียว -->
+            <!-- ถ้าอยากให้ radio อยู่กลุ่มเดียวกัน ต้องกำหนดตรง name ให้เหมือนกัน -->
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">อื่นๆ
+        </div>
+        <div>
+            <!-- checkbox = การเลือกตัวเลือกได้หลายตัวเลือก -->
+            <label for="สิ่งที่ชอบ">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="favorit">เขียนเว็บ
+            <input type="checkbox" name="favorit">เขียนเกม
+            <input type="checkbox" name="favorit">เล่นเกม
+            <input type="checkbox" name="favorit">นอน
+        </div>
+        <div>
+            <!-- แนบเอกสาร หรือการเลือกไฟล์ -->
+            <label for="file">แนบเอกสาร</label>
+            <input type="file" name="file">
+        </div>
+        <div>
+            <!-- url = แนบเว็บไซต์ -->
+            <label for="website">เว็บไซต์</label>
+            <input type="url" name="website" id="">
+        </div>
+        <div>
+            <!--  submit = บันทึกข้อมูล -->
+            <input type="submit" name="submit" value="บันทึกข้อมูล">
+            <!-- reset = ล้างข้อมูล -->
+            <button type="reset">ล้างข้อมูล</button> <!--<button> สร้างปุ่ม -->
+        </div>
+    </form>
+</body>
+</html>
